@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script type="module" src="main.js"></script>
-    <title>Document</title>
+    <title>Adataviz</title>
 </head>
-<body>
+<body>    
+<header>
+    <h1>Patrimoine arboré de Nantes Métropole et de la Ville de Nantes</h1>
+</header>
+<main>
+    <section id="patrimoine">
+        <h2>Découvrir le patrimoine arboré</h2>
+        <div id="grille-villes">
+            <article class="carte-ville">
+                <img src="" alt="Photo du parc">
+                <h3>Nom de la ville</h3>
+                
+                <p>Nombre d'arbres : </p>
+            </article>
+
+        </div>
+    </section>
+    <section id="detail-arbre" hidden>
+        <h2 id="titre-arbre"></h2>
+        <img id="image-carte" src="" alt="Carte de localisation de l'arbre">
+        <details>
+            <summary>Indications</summary>
+            <div id="indications-arbre"></div>
+        </details>
+    </section>
+</main>
+<footer class="navigation-pages">
+    <button id="bouton-retour" hidden>Retour</button>
+    <button id="bouton-suivant">Suivant</button>
+</footer>
     
 </body>
 </html>
