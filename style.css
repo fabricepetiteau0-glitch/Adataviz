@@ -1,0 +1,36 @@
+/*Adataviz*/
+
+/* 1. Rénitialisation*/
+* {
+    box-sizing: border-box; /*Maitrise les dimensions*/
+    margin: 0;/*Espaces extérieur*/
+    padding: 0;/*Espaces interieur*/
+}
+/* 2.Style genéral de la page*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f1ea;
+    color: #2b2b2b;
+}
+/* 3. Titre principale*/
+h1 {
+    font-size: 2rem; /*Définit la taille du texte.*/
+    font-weight: bold;/*Épaisseur du texte*/
+    text-align: center;
+}
+/* En-tête */
+header {
+    background-color: #4a6b3a;
+    color: white;
+    padding: 1.875rem 1.25rem;/*la première correspond à l’axe vertical et la seconde à l’axe horizontal.*/
+}
+main {
+    width: 100%;/*le bloc peut occuper toute la largeur disponible.*/
+    max-width: 1100px;/*le contenu principal ne dépassera pas 1 100 pixels de largeur.*/
+    margin: 0 auto;/*le contenu est centré horizontalement.*/
+}
+#grille-villes {
+    display: grid;/*transforme cet élément en grille pour organiser ses éléments enfants.*/
+    grid-template-columns: 1fr 1fr;/*définit les colonnes de la grille.1fr 1fr crée deux colonnes de même largeur.*/
+    gap: 1.25rem;/*ajoute un espace entre les cartes, horizontalement et verticalement.*/
+}
