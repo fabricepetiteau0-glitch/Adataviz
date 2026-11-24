@@ -5,13 +5,12 @@
  */
 export const makeItem = (data) => {
     // TODO
-    const carteVille =
-     `<article class="carte-ville">
-        <img src="" alt="Photo du parc">
-        <h3>${data.nom}</h3>
+    const carteVille = `<article class="carte-ville">
+        <h3>${data.ville}</h3>
         <p>Nombre d'arbres : ${data.nombreArbres}</p>
-    </article>`
-    return carteVille
+    </article>`;
+
+return carteVille;
 }
 
 /**
