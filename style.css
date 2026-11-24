@@ -33,4 +33,70 @@ main {
     display: grid;/*transforme cet élément en grille pour organiser ses éléments enfants.*/
     grid-template-columns: 1fr 1fr;/*définit les colonnes de la grille.1fr 1fr crée deux colonnes de même largeur.*/
     gap: 1.25rem;/*ajoute un espace entre les cartes, horizontalement et verticalement.*/
+    padding-bottom: 1.25rem;/*ajoute de l'espace à l'intérieur du bas de la grille*/
+}
+
+.carte-ville {
+    background-color: white;
+    color: #2b2b2b;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    margin-bottom: 1.25rem; /*espaces extérieur sous la carte*/
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);/*une ombre discrète autour de la carte*/
+    line-height: 1.6;/*règle la hauteur des lignes*/
+    transition: box-shadow 0.3s ease, transform 0.3S ease;
+}
+
+.carte-ville h3 {
+    color: #4a6b3a;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.carte-ville p {
+    margin-bottom: 0.5rem;
+}
+
+.carte-ville:hover {
+    box-shadow: 0 4pX 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0auto;
+    padding: 1.25rem;
+}
+
+button {
+    background-color: #4a6b3a;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0375rem;
+    cursor: pointer; /*affiche une main au survol du bouton*/
+}
+
+button:hover {
+    background-color: #354d2a;
+}
+
+.navigation-pages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+#patrimoine h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+@media(max-width: 600px) {
+    #grille-villes {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
 }
